@@ -1,0 +1,75 @@
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.pagination a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    margin: 0 5px; 
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.pagination a:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+.pagination a.active {
+    background-color: #007bff;
+    color: white;
+    border: 1px solid #007bff;
+}
+
+.prev, .next {
+    font-weight: bold;
+}
+
+.prev::after, .next::before {
+    content: '';
+    display: inline-block;
+    margin-left: 5px;
+    border: solid transparent;
+}
+
+.prev::after {
+    border-left: 5px solid #333;
+    margin-left: 5px;
+}
+
+.next::before {
+    border-right: 5px solid #333;
+    margin-right: 5px;
+}
+
+.fixed-pagination {
+    position: fixed;
+    bottom: 20px;
+    right: 120px;
+    z-index: 1000;
+}
+
+
+.card {
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.02);
+}
+
+.card-title {
+    font-family: 'Arial', sans-serif;
+}
+
+.letter-space{
+    letter-spacing: 1px;
+    font-size: 40px;
+    text-decoration: underline;
+}
+
